@@ -29,18 +29,16 @@ const Exchange = () => {
 
   const fetchCurrency = async () => {
     try {
-      //   const response = await axios(
-      //     `${import.meta.env.VITE_BASE_URL}/v3/latest?apikey=${
-      //       import.meta.env.VITE_API_KEY
-      //     }`
-      //   );
-      //   if (response.status !== 200) {
-      //     throw new Error("Could not fetch data");
-      //   }
-      //   const currencies = await response.data;
-      //   setCodes(currencies.data);
-
-      setCodes(data);
+      const response = await axios(
+        `${import.meta.env.VITE_BASE_URL}/v3/latest?apikey=${
+          import.meta.env.VITE_API_KEY
+        }`
+      );
+      if (response.status !== 200) {
+        throw new Error("Could not fetch data");
+      }
+      const currencies = await response.data;
+      setCodes(currencies.data);
     } catch (err) {
       console.log(err);
     }
