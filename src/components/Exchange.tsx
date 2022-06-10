@@ -96,7 +96,7 @@ const Exchange = () => {
                     autoComplete="off"
                     value={exchange.from.value}
                     onChange={(e) => {
-                      const value = parseFloat(e.target.value);
+                      const value = parseFloat(e.target.value || "0");
                       dispatch(editFromValueByEId(value, exchange.id));
                     }}
                   />
