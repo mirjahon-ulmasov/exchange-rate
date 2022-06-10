@@ -10,7 +10,6 @@ import {
   removeCurrencyByCIdAndEId,
 } from "../store/action-creator";
 import { RootState } from "../store/reducer";
-import data from "./data.json";
 
 import trashImg from "../assets/icons/trash.svg";
 import plusImg from "../assets/icons/plus.svg";
