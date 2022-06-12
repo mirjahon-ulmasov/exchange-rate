@@ -1,5 +1,11 @@
 # Exchange rate calculator
 
+### Demo
+
+```sh
+https://ex-rate-calculator.netlify.app/
+```
+
 ## Project Setup
 
 ```sh
